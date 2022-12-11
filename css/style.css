@@ -1,0 +1,64 @@
+html {
+	background-image: url(../image/background.jpg);
+	background-size: 185%;
+}
+
+h1, h2 {
+	font-size: 60px;
+	position: relative;
+	right: 25px;
+	text-align: center;
+	font-family: valorant;
+	margin: 10px;
+}
+
+.container {
+	width: 600px;
+	margin: auto;
+}
+
+.kinton {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.kinton::after {
+	content: '';
+	display: block;
+	width: 150px;
+	height: 39px;
+	background: url(../image/kinton.png); bottom center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+button {
+	display: block;
+	margin: auto;
+	position: relative;
+	right: 25px;
+	background-color: khaki
+}
+
+.goku{
+	width: 100%;
+	height: 100%;
+	background: url(../image/goku.png) bottom center no-repeat;
+	background-size: 40%;
+	position: absolute;
+	left: -20%;
+	top: 100px;
+	transition: top 0.3s;
+}
+
+.kinton.muncul .goku {
+	top: 0;
+}
+
+footer{
+	opacity: 15%;
+}
